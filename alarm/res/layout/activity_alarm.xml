@@ -4,11 +4,27 @@
     android:layout_height="match_parent" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/hello_world"
         tools:context=".Alarm" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@string/alarm_time"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginBottom="44dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:ems="10" 
+        android:inputType="time">
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>
